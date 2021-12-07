@@ -33,8 +33,9 @@ int main () {
 	
 	
 	for (int i = 0; i < n; i++) {
-		if (z[i] == strlen(P)) {
-			cout << "chuoi con bat dau tu: " <<  i - strlen(P) -1 << endl;
-		}
+		cout << z[i] << " ";
+//		if (z[i] == strlen(P)) {
+//			cout << "chuoi con bat dau tu: " <<  i - strlen(P) -1 << endl;
+//		}
 	}
 }

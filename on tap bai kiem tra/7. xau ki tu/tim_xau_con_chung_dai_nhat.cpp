@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-char *A = "aybq04";
-char *B = "sagbcxdt";
+char *A = "BABDCBCDB";
+char *B = "BDCB";
 
 int lenA = strlen(A);
 int lenB = strlen(B);
@@ -17,6 +17,7 @@ int max(int a, int b) {
 	}
 }
 
+// xau con dai nhat
 int algorithm() {
 	for (int i = 0; i <= lenA; i++) {
 		L[i][0] = 0;
@@ -26,7 +27,7 @@ int algorithm() {
 	}
 	for (int i = 0; i < lenA; i++) {
 		for (int j = 0; j < lenB; j++) {
-			if(A[i-1] == B[i-1])
+			if(A[i-1] == B[j-1])
 				L[i][j] = L[i-1][j-1] + 1;
 			else {
 				L[i][j] = max(L[i-1][j], L[i][j-1]);
@@ -57,6 +58,7 @@ void xau_con() {
 
 
 
+
 int main() {
 	xc = new char[lenA];
 	L = new int *[lenA + 1];
@@ -64,7 +66,6 @@ int main() {
 		L[i] = new int[lenB +1];
 	}
 	cout << "chieu dai cua xau con: " << algorithm() << endl;
-	xau_con();	
-			
+	xau_con();			
 	cout << "xau  con chung dai nhat: " << xc;
 }

@@ -34,7 +34,6 @@ int m = 100;
 int i, j, temp, F[6][101] = {0};
 algorithm() {
 	for(int i = 0; i <= m; i++) F[0][j] = 0;
-	cout << "a";
 	for(i = 1; i <= n; i++) {
 		for(j = 0; j <= m; j++) {
 			F[i][j] = F[i-1][j];

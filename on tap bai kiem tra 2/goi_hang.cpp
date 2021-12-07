@@ -66,8 +66,6 @@ void chonGoiHang() {
 	}
 }
 
-
-
 int main() {
 	string maHangCanTim = "GH005";
 	int result = timHang(d, 0, n-1, maHangCanTim);

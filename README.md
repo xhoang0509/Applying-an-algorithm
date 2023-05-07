@@ -1,2 +1,1 @@
-# ung-dung-thuat-toan
-ung dung thuat toan 2021
+# Applying-an-algorithm
